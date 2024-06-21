@@ -1,5 +1,9 @@
 package com.huldar.demo;
 
+import com.codeborne.selenide.Selenide;
+
+import static com.codeborne.selenide.Selenide.open;
+
 /**
  * @author huldarchen
  * @version 1.0
@@ -8,9 +12,8 @@ package com.huldar.demo;
 public class WebScraper {
     public static String getBaiduTitle() {
         // 配置Selenide为无头模式，这样不会打开浏览器界面
-        Configuration.headless = true;
-        Configuration.startMaximized = false;
-        Configuration.browserSize = "1920x1080";
+//        Configuration.headless = true;
+//        Configuration.browserSize = "1920x1080";
 
         // 打开百度网站
         open("https://www.baidu.com");
